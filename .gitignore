@@ -9,8 +9,6 @@ lerna-debug.log*
 
 node_modules
 .DS_Store
-dist
-dist-ssr
 coverage
 *.local
 
@@ -133,7 +131,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# dist
 
 # Gatsby files
 .cache/
