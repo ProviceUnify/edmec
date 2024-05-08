@@ -1,0 +1,46 @@
+:root {
+  --primary: 255, 111, 0;
+  --primary-background: #dd6100;
+
+  --secondary: #20150d;
+  --secondary-background: #140e0a;
+
+  --primary-red: #fe0000;
+  --primary-red-background: #cd0000;
+
+  --secondary-red: #330505;
+  --secondary-red-text: #910000;
+  --secondary-red-background: #150606;
+
+  --yellow: #fcc300;
+
+  --white: #fff;
+  --black: #000;
+
+  --material-card-scale: 8.125rem;
+}
+
+@font-face {
+  font-family: eurostile_roman;
+  src: url(../fonts/eurostile_roman.ttf);
+}
+
+@font-face {
+  font-family: centurygothic;
+  src: url(../fonts/centurygothic.ttf);
+}
+
+body {
+  background-color: #060606;
+  display: flex;
+}
+
+.elite-text {
+  font-family: 'centurygothic';
+  color: rgb(var(--primary));
+}
+
+.elite-text-glow {
+  text-shadow: 0 0 0.7rem rgba(var(--primary), 0.5);
+  font-weight: 600;
+}
