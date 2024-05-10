@@ -1,15 +1,13 @@
 <template>
-  <!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-    y="0px" viewBox="0 0 827.7 721.5" style="enable-background:new 0 0 827.7 721.5;" xml:space="preserve">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 956.47 882.48" style="enable-background:new 0 0 956.47 882.48;">
     <g>
-      <polygon points="189.7,83.5 166.2,45.3 0,316.2 46.9,316.2" />
-      <polygon points="247.8,2.1 272.4,42.1 554.4,42.1 579,2.1" />
-      <polygon points="637.6,82.8 780.8,316.3 827.7,316.3 661.1,44.5" />
-      <polygon points="46.3,408.4 -0.6,408.4 164.6,677.9 188.1,639.6" />
-      <polygon points="582.6,723.6 558,683.6 269.2,683.6 244.7,723.6" />
-      <polygon points="639.4,640 662.9,678.2 828.3,408.4 781.4,408.4" />
-      <polygon points="305.9,483.8 537.1,371.9 544.4,237.7 353.6,322.2" />
+      <polygon points="340.99 589.25 607.09 460.46 615.49 306 395.89 403.26 340.99 589.25" />
+      <polygon points="0 499.44 189.18 825.51 225.92 761.86 73.67 499.44 0 499.44" />
+      <polygon points="730.55 761.86 767.29 825.51 956.47 499.44 882.8 499.44 730.55 761.86" />
+      <polygon points="290.69 882.48 665.79 882.48 629.13 818.99 327.34 818.99 290.69 882.48" />
+      <polygon points="189.18 56.97 0 383.04 73.67 383.04 225.92 120.62 189.18 56.97" />
+      <polygon points="956.47 383.04 767.29 56.97 730.55 120.62 882.8 383.04 956.47 383.04" />
+      <polygon points="665.79 0 290.69 0 327.34 63.49 629.13 63.49 665.79 0" />
     </g>
   </svg>
 </template>
