@@ -1,0 +1,5 @@
+export { default as Grade1Icon } from './Grade1Icon.vue'
+export { default as Grade2Icon } from './Grade2Icon.vue'
+export { default as Grade3Icon } from './Grade3Icon.vue'
+export { default as Grade4Icon } from './Grade4Icon.vue'
+export { default as Grade5Icon } from './Grade5Icon.vue'
