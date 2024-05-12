@@ -17,7 +17,7 @@
   --white: #fff;
   --black: #000;
 
-  --material-card-scale: 8.125rem;
+  /* --material-card-scale: 9.825rem; */
 
   --main-background: #060606;
 
@@ -36,12 +36,12 @@
 
 body {
   background-color: #060606;
-  display: flex;
 }
 
 .elite-text {
   font-family: 'centurygothic';
   color: rgb(var(--primary));
+  user-select: none;
 }
 
 .elite-text-glow {
