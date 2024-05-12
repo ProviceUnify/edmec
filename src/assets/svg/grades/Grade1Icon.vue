@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 956.47 882.48" style="enable-background:new 0 0 956.47 882.48;">
+  <svg viewBox="0 0 956.47 882.48">
     <g>
       <polygon points="340.99 589.25 607.09 460.46 615.49 306 395.89 403.26 340.99 589.25" />
       <polygon points="0 499.44 189.18 825.51 225.92 761.86 73.67 499.44 0 499.44" />

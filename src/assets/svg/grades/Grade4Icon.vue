@@ -1,8 +1,5 @@
 <template>
-  <!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-  <svg version="1.1" id="Layer_2_00000057115287724076065070000013339233251309308578_" xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1024 882.48"
-    style="enable-background:new 0 0 1024 882.48;" xml:space="preserve">
+  <svg viewBox="0 0 1024 882.48">
     <g>
       <polygon points="402.81 405.39 592.32 214.91 553.03 79.96 393.93 229.35 402.81 405.39" />
       <polygon points="476.15 550.41 285.67 360.9 150.72 400.05 300.11 559.3 476.15 550.41" />
