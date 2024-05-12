@@ -16,7 +16,12 @@
 
 <script setup lang="ts">
 import materialTypeViewBox from './materialTypeViewBox'
-const viewBox = materialTypeViewBox
+
+const props = defineProps({
+    isCropped: Boolean
+})
+
+const viewBox = props.isCropped ? materialTypeViewBox.value.cropped : materialTypeViewBox.value.original
 </script>
 
 <style scoped>
