@@ -144,8 +144,7 @@ watch(() => props.isDimmed, (newValue) => {
 .is-selected {
   border-color: var(--main-background);
   background: linear-gradient(var(--main-background) 0 0) padding-box,
-    linear-gradient(180deg, rgba(var(--primary), 0.4), rgb(var(--primary)), rgba(var(--primary), 0.4)) border-box;
-  /* linear-gradient(180deg, red, white, red) border-box; */
+    linear-gradient(180deg, rgba(var(--selected-border-color), 0.4), rgb(var(--selected-border-color)), rgba(var(--selected-border-color), 0.4)) border-box;
   border-width: 2px;
   border-style: dashed;
 
@@ -159,7 +158,6 @@ watch(() => props.isDimmed, (newValue) => {
   grid-template-columns: 100%;
   grid-template-rows: auto 35%;
   background-color: var(--secondary-background);
-  /* background-color: var(--secondary-background); */
 }
 
 /* Usual appearance */

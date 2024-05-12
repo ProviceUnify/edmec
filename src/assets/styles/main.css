@@ -20,6 +20,8 @@
   --material-card-scale: 8.125rem;
 
   --main-background: #060606;
+
+  --selected-border-color: 231, 161, 108;
 }
 
 @font-face {
