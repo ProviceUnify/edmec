@@ -5,8 +5,8 @@
   --secondary: #20150d;
   --secondary-background: #140e0a;
 
-  --primary-red: #fe0000;
-  --primary-red-background: #cd0000;
+  --primary-red: 254, 0, 0;
+  --primary-red-background: #dd0000;
 
   --secondary-red: #330505;
   --secondary-red-text: #910000;
@@ -18,6 +18,10 @@
   --black: #000;
 
   --material-card-scale: 8.125rem;
+
+  --main-background: #060606;
+
+  --selected-border-color: 231, 161, 108;
 }
 
 @font-face {
