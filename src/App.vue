@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import MaterialCard from './components/MaterialCard.vue'
+import MaterialTradeRow from './components/MaterialTradeRow.vue'
 import apiKey from './data/apiKey'
 
 const t = ref(true)
@@ -20,13 +21,21 @@ async function fetchData() {
 </script>
 
 <template>
-  <div>
-    <MaterialCard grade="one" :isRed="t" :isDimmed="t" material-type="encoded" />
-    <MaterialCard grade="two" :isRed="t" />
-    <MaterialCard grade="three" :isRed="t" material-type="manufactured" @mc-click="fetchData" />
-    <MaterialCard grade="four" :isRed="t" />
-    <MaterialCard grade="five" :isRed="true" @mc-click="test" />
-  </div>
+  <MaterialTradeRow>
+    <MaterialCard grade="one" :isRed="t" :isDimmed="t" material-type="encoded">
+      Lorem ipsum dolor sit amet
+    </MaterialCard>
+    <MaterialCard grade="two" :isRed="t">Lorem ipsum</MaterialCard>
+    <MaterialCard grade="three" :isRed="t" material-type="manufactured" @mc-click="fetchData">
+      Lorem ipsum dolor sit ametLorem ipsum dolor sit amet
+    </MaterialCard>
+    <MaterialCard grade="four" :isRed="t">
+      dolor
+    </MaterialCard>
+    <MaterialCard grade="five" :isRed="true" @mc-click="test">
+      Lorem ipsum dolor sit ametLorem
+    </MaterialCard>
+  </MaterialTradeRow>
 </template>
 
 <style scoped></style>

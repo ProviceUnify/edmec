@@ -3,14 +3,16 @@
     @click="click">
     <div class="material-card-background">
       <div class="material-card-content-wrapper">
-        <component :is="typeIcon" class="material-type" />
+        <component :is="typeIcon" class="material-type" :is-cropped="true" />
         <div class="material-card-content">
           <component :is="gradeIcon" class="grade-icon" :class="{ 'dimmed': _isDimmed }" />
           <span class="material-card-content-count" :class="{ 'dimmed': _isDimmed }">7</span>
         </div>
       </div>
       <div class="material-card-title">
-        <span class="material-card-title-content" :class="{ 'dimmed': _isDimmed }">Прототипы of heat radiators</span>
+        <span class="material-card-title-content" :class="{ 'dimmed': _isDimmed }">
+          <slot />
+        </span>
       </div>
     </div>
   </div>
@@ -120,6 +122,10 @@ watch(() => props.isDimmed, (newValue) => {
 </script>
 
 <style scoped>
+* {
+  --material-card-view-width: 12vw;
+}
+
 /* Dimmed brightness for preview of materials that unavailable for exchange */
 .dimmed {
   filter: brightness(.55);
@@ -133,11 +139,9 @@ watch(() => props.isDimmed, (newValue) => {
 
 /* Usual appearance */
 .material-card {
-  user-select: none;
   border: 2px solid var(--secondary);
   padding: 3px;
-  height: var(--material-card-scale);
-  width: calc(var(--material-card-scale) * 1.45);
+  width: var(--material-card-view-width);
   color: rgb(var(--primary));
 }
 
@@ -153,10 +157,9 @@ watch(() => props.isDimmed, (newValue) => {
 /* Usual appearance */
 .material-card-background {
   display: grid;
-  height: 100%;
   text-align: center;
   grid-template-columns: 100%;
-  grid-template-rows: auto 35%;
+  grid-template-rows: 7fr 3fr;
   background-color: var(--secondary-background);
 }
 
@@ -167,7 +170,7 @@ watch(() => props.isDimmed, (newValue) => {
   align-items: center;
   font-size: 16pt;
   font-weight: bold;
-  grid-template-rows: auto 35%;
+  grid-template-rows: 2fr 1fr;
   z-index: 1;
 }
 
@@ -182,8 +185,15 @@ watch(() => props.isDimmed, (newValue) => {
   grid-column: 1;
 }
 
+/* Hides background material type icons when screen width less 1350px */
+@media screen and (max-width: 1350px) {
+  .material-type {
+    display: none !important;
+  }
+}
+
 .material-card-content-wrapper>.material-type {
-  width: 10.6rem;
+  width: var(--material-card-view-width);
   justify-self: center;
   align-self: center;
   filter: brightness(.2);
@@ -192,7 +202,7 @@ watch(() => props.isDimmed, (newValue) => {
 
 /* Usual appearance */
 .grade-icon {
-  width: 2.5rem;
+  width: 2.7rem;
   align-self: flex-end;
   margin-bottom: 4px;
 }
@@ -206,9 +216,24 @@ watch(() => props.isDimmed, (newValue) => {
 }
 
 /* Usual appearance */
-.material-card-title-content {
+/* .material-card-title-content {
   display: inline-block;
   width: 95%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+} */
+
+/* Usual appearance */
+.material-card-title-content {
+  width: 95%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 /* 'Exchange unavailable' appearance */
